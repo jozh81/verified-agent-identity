@@ -1,16 +1,16 @@
-name: Verify Human Identity-Jozh81
+name: Verify Human Identity-jozh81
 
 on:
   workflow_dispatch:
     inputs:
       agent_name:
-        description: 'Jozh81'
+        description: 'jozh81'
         required: true
-        default: 'Jozh81'
+        default: 'jozh81'
       agent_description:
-        description: 'Jozh81'
+        description: 'jozh81'
         required: true
-        default: 'Jozh81 AI Agent'
+        default: 'jozh81 AI Agent'
 
 jobs:
   verify:
@@ -38,4 +38,4 @@ jobs:
 
       - name: Step 3 - Link Human to Agent
         run: |
-          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "Jozh81", "description": "Jozh81 AI Agent"}'
+          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "jozh81", "description": "jozh81 AI Agent"}'
